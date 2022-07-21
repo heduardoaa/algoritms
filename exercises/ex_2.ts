@@ -1,10 +1,12 @@
-// put reverse the string
-const str = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
+// TODO: function to reverse a string
+const reverseStr = (str: string) => {
+    let txt = "";    
+    for(let i = str.length -1; i >= 0; i--) {
+        txt += str[i];
+    }
+    return txt;
+};
 
-let txt = "";
+const txtReverse = reverseStr("hola mundo");
+console.info(txtReverse)
 
-for(let i = str.length -1; i >= 0; i--) {
-    txt += str[i];
-}
-
-console.log(txt);
