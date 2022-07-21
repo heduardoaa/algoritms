@@ -1,5 +1,4 @@
 const sum = (n) => {
-    // console.log(n);
     if(n <= 0) {
         return 0;
     }
@@ -10,7 +9,7 @@ const sum = (n) => {
 
 sum(999);
 
-const pairSumSequence = (n) => {
+const pairSumSequence = (n: number) => {
     let sum = 0;
     for(let i = 0; i < n; i++) {
         sum += pairSum(i, i + 1);
@@ -18,7 +17,7 @@ const pairSumSequence = (n) => {
     console.log("result: " + sum);
     return sum;
 }
- const pairSum = (a, b) => {
+ const pairSum = (a: number, b: number) => {
     const result = a + b;
     console.log("pairing sum: " + result);
     return result;
