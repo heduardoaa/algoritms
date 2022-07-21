@@ -1,0 +1,5 @@
+node_modules/
+.vscode
+.idea/
+*.iml
+cf_blue_green_deploy_dev_it.sh
