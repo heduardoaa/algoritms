@@ -7,6 +7,6 @@ const reverseStr = (str: string) => {
     return txt;
 };
 
-const txtReverse = reverseStr("hola mundo");
+const txtReverse = reverseStr("hello world");
 console.info(txtReverse)
 
