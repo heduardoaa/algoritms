@@ -1,5 +1,6 @@
-// how many times is repeated a charracter of a text;
+// how many times is repeated a character of a text;
 
+// solution 1
 const txt: string = "hello world";
 const char: string = "o";
 
