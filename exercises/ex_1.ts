@@ -53,4 +53,29 @@ const resultX2 = [...new Set(arr)].map(num => {
 });
 console.info(resultX2);
 
+// solution 3
 
+let resultX3: any = [];
+
+for(let num of arr) {
+    let newElement: boolean = true;
+    for(let n of resultX3) {
+        if (n.element === num) {
+            n.count++;
+            n.numberPairs++;
+            newElement = false;
+        }
+    }
+    if (newElement) {
+        resultX3[resultX3.length] = {
+            element: num,
+            count: 1,
+            numberPairs: 1
+        }
+    }
+}
+
+for(let x of Object.keys(resultX3)) {
+    resultX3[x].numberPairs = Number.isInteger(resultX3[x].numberPairs / 2) ? resultX3[x].numberPairs / 2 : Math.round(resultX3[x].numberPairs / 2) -1;
+}
+console.log(resultX3);
