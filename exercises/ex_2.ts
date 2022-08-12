@@ -15,16 +15,16 @@ console.info(txtReverse);
 
 // solution 2
 
-const txtReversex2 = wordToReverse.split("").reverse().join("");
-console.info(txtReversex2);
+const txtReverseX2 = wordToReverse.split("").reverse().join("");
+console.info(txtReverseX2);
 
 // solution 3
 
-let txtReversex3 = "";
+let txtReverseX3 = "";
 
 for(let letter of wordToReverse) {
-    letter += txtReversex3
-    txtReversex3 = letter
+    letter += txtReverseX3
+    txtReverseX3 = letter
     }
-console.log(txtReversex3);
+console.log(txtReverseX3);
 
