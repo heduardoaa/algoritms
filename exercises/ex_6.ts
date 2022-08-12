@@ -4,8 +4,7 @@ const words = "lundi mardi    mercredi  jeudi    vendredi    samedi dimanche";
 
 // solution 1
 
-let result: any = words.replace(/\s+/g, " ");
-    result = result.split(" ");
+let result: any = words.replace(/\s+/g, " ").split(" ");
 
 console.info(result);
 
