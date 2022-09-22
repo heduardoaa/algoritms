@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "ts-node"
+    "test": "ts-mocha"
   },
   "dependencies": {
     "npm": "^8.17.0",

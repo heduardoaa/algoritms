@@ -41,7 +41,7 @@ export function decodedValue(colorNamesArray: any) {
     }
 
     let colorNumber: any = "";
-    for ( let index = 0; index <= colorNamesArray.length; index++ ) {
+    for (let index = 0; index <= colorNamesArray.length; index++) {
         const colorName = colorNamesArray[index] ? colorNamesArray[index].charAt(0).toUpperCase() + colorNamesArray[index].slice(1) : "";
         if (colorName && Object.keys(bandsColors).includes(colorName) && index < 2) {
             colorNumber = colorNumber + bandsColors[colorName].toString();
