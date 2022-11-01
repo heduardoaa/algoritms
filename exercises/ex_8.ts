@@ -26,6 +26,4 @@ function showNumber() {
     return number;
 }
 
-
-
 console.log(showNumber());
