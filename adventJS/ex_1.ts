@@ -50,7 +50,7 @@ function wrapping2(gifts: any) {
 
 const gifts = ['cat', 'game', 'socks']
 const wrapped = wrapping(gifts)
-const wrapped2 = wrapping(gifts)
+const wrapped2 = wrapping2(gifts)
 
 console.log(wrapped)
 console.log(wrapped2)
